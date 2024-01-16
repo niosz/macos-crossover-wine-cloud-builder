@@ -18,8 +18,6 @@ runs:
       shell: bash
       run: |
         pushd ${{ inputs.crossover-source }}/dxvk
-        patch -p1 < ${{ github.workspace }}/0001-build-macOS-Fix-up-for-macOS.patch
-        patch -p1 < ${{ github.workspace }}/0003-fixes-for-mingw-gcc-12.patch
         popd
 
     ############ Build and Install MoltenVK ##############
